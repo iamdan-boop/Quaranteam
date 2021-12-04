@@ -1,0 +1,204 @@
+:root {
+    --main-bg-color: #5bacaf;
+    --main-text-color: #5bacaf;
+    --second-text-color: #bbbec5;
+    --second-bg-color: #add2d9;
+}
+
+.primary-text {
+    color: #3c6566;
+}
+
+.second-text {
+    color: var(--second-text-color);
+}
+
+.primary-bg {
+    background-color: var(--main-bg-color);
+}
+
+.secondary-bg {
+    background-color: var(--second-bg-color);
+}
+
+.rounded-full {
+    border-radius: 100%;
+}
+
+#wrapper {
+    overflow-x: hidden;
+    background-color: #5bacaf;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#menu-toggle {
+    cursor: pointer;
+}
+
+.list-group-item {
+    border: none;
+    padding: 20px 30px;
+}
+
+.list-group-item.active {
+    background-color: transparent;
+    color: var(--main-text-color);
+    font-weight: bold;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.bookTitle {
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom: 5px solid #284e50;
+    width: 50%;
+    color: #284e50;
+    text-align: center;
+}
+
+.bookContent {
+    background-color: #fff;
+    color: #284e50;
+    border-radius: 10px;
+    width: 80%;
+    font-size: 15px;
+}
+
+.regContent {
+    background-color: white;
+    color: #284e50;
+    border-radius: 10px;
+    width: 75%;
+    font-size: 15px;
+}
+
+.formTitle {
+    background-color: #fff;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border-right: 5px solid #284e50;
+    border-left: 5px solid #284e50;
+    border-top: 5px solid #284e50;
+    width: 60%;
+    color: #284e50;
+}
+.formContent {
+    background-color: white;
+    color: #284e50;
+    border-radius: 10px;
+    width: 95%;
+}
+
+.mainprofile {
+    border: 7px solid #284e50;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ba68c8;
+}
+
+.profile-button {
+    background-color: #284e50;
+    box-shadow: none;
+    border: none;
+}
+
+.profile-button:hover {
+    background: #5bacaf;
+}
+
+.profile-button:focus {
+    background: #284e50;
+    box-shadow: none;
+}
+
+.profile-button:active {
+    background: #284e50;
+    box-shadow: none;
+}
+
+.back:hover {
+    color: #284e50;
+    cursor: pointer;
+}
+
+.labels {
+    font-size: 15px;
+}
+
+.vl {
+    border-left: 6px solid green;
+}
+
+.profile {
+    border-right: 5px solid #284e50;
+}
+
+.form-select,
+.form-control {
+    border: none;
+    border-bottom: 3px solid #284e50;
+    border-radius: 0;
+}
+
+.form-select:focus + label,
+.form-control:focus + label {
+    color: #284e50;
+}
+
+.form-select:focus + label,
+.form-control:focus + label {
+    color: #284e50;
+}
+
+.form {
+    padding: 1em;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+
+    @media only screen and (min-width: 768px) {
+        width: 50%;
+    }
+}
